@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="bpptree.h" />
+    <ClInclude Include="bpptree_map.h" />
+    <ClInclude Include="bpptree_set.h" />
+    <ClInclude Include="bind_second.h" />
+    <ClInclude Include="RankerCore.h" />
+    <ClInclude Include="Ranker.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="bpptree.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Ranker.cpp" />
+  </ItemGroup>
+</Project>
