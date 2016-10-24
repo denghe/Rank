@@ -24,6 +24,10 @@ namespace xxlib
 
 	int Ranker::FillRanks(Int64 id, Int64 score, int num, array<Int64>^ outIDs, array<int>^ outRanks)
 	{
+		if (num > outIDs->Length || num > outRanks->Length)
+		{
+			throw gcnew Exception("outIDs or outRanks's Length is not enough!");
+		}
 		pin_ptr<Int64> outIDs_pin_ptr = &outIDs[0];
 		long long* outIDs_ptr = outIDs_pin_ptr;
 
