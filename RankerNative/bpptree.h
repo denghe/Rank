@@ -441,7 +441,7 @@ protected:
 		}
 		result_t &operator |= (result_t const &other)
 		{
-			if (has(btree_update_lastkey))
+			if (other.has(btree_update_lastkey))
 			{
 				if (has(btree_update_lastkey))
 				{
